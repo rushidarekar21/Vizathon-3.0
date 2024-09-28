@@ -1041,6 +1041,8 @@ p {
   }
 }
 
+
+
 .page-footer .footer-left,
 .page-footer .footer-right {
   transition: 0.1s;
@@ -1512,12 +1514,76 @@ p {
 
 .section-content .title-desc {
   margin-bottom: 2rem;
+
 }
 
 @media (min-width: 768px) {
   .section-content .title-desc {
     margin-bottom: 0;
   }
+}
+
+.section-content .title-desc .logo{
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00b3ff);
+}
+
+.section-content .title-desc .event{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-content .title-desc .event .date{
+  color: #00b3ff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.section-content .title-desc .event .name{
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 2px;  
+}
+
+
+.section-content .title-desc .event .name .highlight {
+  color: #0077cc;
+}
+
+.section-content .title-desc .sponsor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.section-content .title-desc .sponsor .text{
+  color: #00b3ff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-content .title-desc .sponsor .logo{
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00b3ff);
+}
+
+.section-content .title-desc .text{
+  margin-top: 20px;
+}
+
+.section-content .title-desc h4, 
+.section-content .title-desc h6 {
+  color: #ddd; 
+}
+
+.section-content .col-12.title-desc {
+  display: flex;
+  justify-content: center;
 }
 
 .section-content .illustr img {
@@ -3170,6 +3236,19 @@ h4 {
   padding: 24px 44px;
   border-radius: 15px;
   margin: 10vh auto;
+}
+
+#devfolio-apply-now {
+  background: linear-gradient(45deg, #00b3ff, #0077cc);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#devfolio-apply-now:hover {
+  box-shadow: 0 0 20px #00b3ff;
 }
 
 .devfolio-large {
