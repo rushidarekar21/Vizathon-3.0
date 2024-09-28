@@ -1533,6 +1533,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-content .title-desc .event .date{
@@ -1545,11 +1546,17 @@ p {
   font-size: 80px;
   font-weight: 800;
   letter-spacing: 2px;  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 
 .section-content .title-desc .event .name .highlight {
   color: #0077cc;
+  background: linear-gradient(to bottom, #0077cc, #00b3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-content .title-desc .sponsor{
