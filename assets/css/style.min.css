@@ -3509,13 +3509,16 @@ a:hover {
 
 .prizecard .title {
   width: 100%;
-  margin: 0;
+  margin: 5px;
   text-align: center;
   color: #fff;
   font-weight: 600;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 4px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .prizecard-1 .title {
@@ -3529,12 +3532,23 @@ a:hover {
   letter-spacing: 4px;
 }
 
+.prizecard .title .date {
+  font-size: 24px; 
+  font-weight: bold;  
+}
+
+.prizecard .title .time {
+  font-size: 16px; 
+  font-weight: normal;
+  color: #888; 
+}
+
 .prizecard .text {
   width: 80%;
   margin: 0 auto;
   font-size: 13px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 7.5px;
   margin-bottom: 30px;
   color: #fff;
   font-weight: 200;
