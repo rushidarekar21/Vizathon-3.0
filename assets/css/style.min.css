@@ -3073,14 +3073,13 @@ h4 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #0e0c0d url(../img/favicon.svg) no-repeat center center;
+  background: #0e0c0d url(../img/vizlogov1.png) no-repeat center center;
   background-size: 100px 100px;
   text-align: center;
   padding-top: calc(50vh + 60px);
 }
-
 #preloader > div {
-  background-color: #49a8e0;
+  background-color: #f16b6b; /* Change this color */
   height: 50px;
   width: 6px;
   display: inline-block;
@@ -3112,16 +3111,16 @@ h4 {
   0%,
   40% {
     -webkit-transform: scaleY(0.4);
-    background-color: #49a8e0;
+    background-color: #f16b6b; /* First color */
   }
   20% {
     -webkit-transform: scaleY(1);
-    background-color: #1958a1;
+    background-color: #6abf69; /* Second color */
   }
   100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-    background-color: #1958a1;
+    background-color: #6abf69; /* Second color */
   }
 }
 
@@ -3130,20 +3129,19 @@ h4 {
   40% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-    background-color: #49a8e0;
+    background-color: #f16b6b; /* First color */
   }
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1);
-    background-color: #1958a1;
+    background-color: #6abf69; /* Second color */
   }
   100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-    background-color: #1958a1;
+    background-color: #6abf69; /* Second color */
   }
 }
-
 #devfolio-apply-now {
   background-color: #3770ff;
   border-radius: 5px;
