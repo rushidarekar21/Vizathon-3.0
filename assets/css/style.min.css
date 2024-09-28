@@ -3518,14 +3518,24 @@ a:hover {
   }
 }
 
-.fa-facebook:hover,
-.fa-instagram:hover,
-.fa-linkedin:hover,
-.fa-twitter:hover {
-  color: #037fd5;
+.fa-youtube:hover {
+  color: #FF4E42; /* YouTube red (slightly faint for a softer look) */
 }
 
-.icon.fa-facebook:hover,
+.fa-instagram:hover {
+  color: #C32AA3; /* Correct Instagram pinkish color */
+}
+
+.fa-linkedin:hover {
+  color: #0072b1; /* Refined LinkedIn blue */
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2; /* Twitter blue remains the same */
+}
+
+
+.icon.fa-youtube:hover,
 .icon.fa-instagram:hover,
 .icon.fa-linkedin:hover,
 .icon.fa-twitter:hover {
