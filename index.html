@@ -160,7 +160,67 @@
             <img class="logo" style="width: 125px; height: 80px;" src="./assets/img/Dataviz.png" alt="Event Logo" />
             <div class="event">
               <h4 class="date">16th - 19th January 2024</h4>
-              <h1 class="name">VIZ-A-THON <span class="highlight">3.0</span></h1>
+              <h1 class="name" style="font-size: rem; font-weight: bold; position: relative; display: inline-block;">
+                VIZ-A-THON <span class="highlight" style="color: #ff6347;">3.0</span>
+              </h1>
+              
+              <style>
+                .name {
+                  position: relative;
+                  display: inline-block;
+                }
+              
+                /* 3 animated sublines */
+                .name::after, .name::before, .name span::after {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: -5px; /* Adjust position of the underline */
+                  height: 3px;  /* Thickness of the lines */
+                  background-color: orange;
+                  width: 100%;  /* The line covers the full width */
+                  opacity: 0;   /* Initially hidden */
+                }
+              
+                /* First line animation */
+                .name::after {
+                  bottom: -5px;
+                  animation: animateLine 2s infinite;
+                  animation-delay: 0s; /* First line starts immediately */
+                }
+              
+                /* Second line animation */
+                .name::before {
+                  bottom: -10px;
+                  background-color: white;
+                  animation: animateLine 2s infinite;
+                  animation-delay: 0.5s; /* Delayed start for second line */
+                }
+              
+                /* Third line animation */
+                .name span::after {
+                  bottom: -15px;
+                  background-color: green;
+                  animation: animateLine 2s infinite;
+                  animation-delay: 1s; /* Further delay for third line */
+                }
+              
+                @keyframes animateLine {
+                  0% {
+                    width: 0;
+                    opacity: 1; /* Line appears */
+                  }
+                  50% {
+                    width: 100%; /* Line grows to full width */
+                    opacity: 1;
+                  }
+                  100% {
+                    width: 100%;
+                    opacity: 0; /* Line fades out */
+                  }
+                }
+              </style>
+              
             </div>
             <div class="sponsor">
               <p class="text">Event sponsored by</p>
@@ -267,7 +327,7 @@
       </div>
     </div>
 
-    <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
+    <!--<div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
       data-section="tracks" data-anchor="tracks">
       <div class="section-wrapper center-vh dir-col anim">
         <div class="section-title text-center"></div>
@@ -298,7 +358,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
       data-section="prizes" data-anchor="prizes">
@@ -420,7 +480,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
+    <!--<div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
       data-section="rarible" data-anchor="rarible">
       <div class="section-wrapper center-vh dir-col anim">
         <div class="anim-2">
@@ -455,7 +515,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
       data-section="timeline" data-anchor="timeline">
       <div class="section-wrapper center-vh dir-col anim">
