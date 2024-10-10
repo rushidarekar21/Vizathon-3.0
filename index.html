@@ -17,9 +17,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VizAThon3.0" />
-  <link rel="canonical" href="https://devsoc.codechefvit.com" />
-  <link href="./assets/img/favicon.png" rel="apple-touch-icon" />
-  <link href="./assets/img/favicon.png" rel="icon" />
+  <link href="./assets/img/viz.png" rel="apple-touch-icon" />
+  <link href="./assets/img/viz.png" rel="icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.min.css" />
@@ -48,8 +47,24 @@
     </button>
     <a class="navbar-brand" href="/">
       <span class="logo">
-        <img class="light-logo" src="./assets/img/AISA-DARK.png" alt="Logo" />
+        <img class="light-logo" src="./assets/img/AISA-DARK.png" alt="Logo"/>
       </span>
+      <style>
+        /* Set height and width for the logo in desktop view */
+.light-logo {
+  height: 100px; /* Adjust the height as per your requirement */
+  width: auto; /* Maintain aspect ratio by setting width to auto */
+}
+
+/* Ensure default size in mobile view */
+@media (max-width: 768px) {
+  .light-logo {
+    height: auto;
+    width: 100%; /* Or set specific mobile size if needed */
+  }
+}
+
+      </style>
     </a>
     <div class="all-menu-wrapper" id="navbarMenu">
       <nav class="navbar-mainmenu">
@@ -82,7 +97,7 @@
           </li>
         </ul>
       </nav>
-      <nav class="navbar-sidebar">
+      <!---<nav class="navbar-sidebar">
         <ul class="navbar-nav" id="qmenu">
           <a href="#home">
             <li class="nav-item" data-menuanchor="home">
@@ -134,7 +149,7 @@
             </li>
           </a>
         </ul>
-      </nav>
+      </nav>-->
     </div>
   </header>
 
@@ -148,91 +163,116 @@
         transform: translate3d(0px, 0px, 0px);
         transition: all 0ms ease 0s;
       ">
-    <a href="https://www.codechefvit.com/discord">
-      <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png" alt="Discord"
-        class="discord" style="z-index: 999999" />
-    </a>
+    <!--<a href="mailto:aisa@viit.ac.in">
+      <img src="./assets/img/gmail.png" alt="mail"
+        class="discord" style="z-index: 999999; background: transparent;" />
+    </a>-->
     <div class="section section-home fullscreen-md fp-auto-height-responsive main-home sec1 fp-section anim"
       data-section="home" data-anchor="home">
       <div class="section-wrapper center-vh dir-col">
         <div class="section-content anim mt-80">
           <div class="title-desc">
-            <img class="logo" style="width: 125px; height: 80px;" src="./assets/img/Dataviz.png" alt="Event Logo" />
+            <img class="logo" style="width: 215px; height: 60px; margin-top: -40px; border: 1px solid white;" src="./assets/img/vizlogov1.png" alt="Event Logo" />
             <div class="event">
               <h4 class="date">16th - 19th January 2024</h4>
-              <h1 class="name" style="font-size: rem; font-weight: bold; position: relative; display: inline-block;">
+              <h1 class="name" style="font-size: rem; font-weight: bold; position: relative; display: inline-block; font-size:clamp(50px,8vw,80px)">
                 VIZ-A-THON <span class="highlight" style="color: #ff6347;">3.0</span>
               </h1>
-              
               <style>
-                .name {
-                  position: relative;
-                  display: inline-block;
+                
+
+                @media screen {
+                  .light-logo{
+                    height: 180px;
+                    width: 70px;
+                  }
+                  
                 }
-              
+                @media screen {
+                  .title-desc{
+                    margin-top: 50px;
+                  }
+                }
+                
+
                 /* 3 animated sublines */
-                .name::after, .name::before, .name span::after {
+                .name::after,
+                .name::before,
+                .name span::after {
                   content: '';
                   position: absolute;
                   left: 0;
-                  bottom: -5px; /* Adjust position of the underline */
-                  height: 3px;  /* Thickness of the lines */
+                  bottom: -5px;
+                  /* Adjust position of the underline */
+                  height: 3px;
+                  /* Thickness of the lines */
                   background-color: orange;
-                  width: 100%;  /* The line covers the full width */
-                  opacity: 0;   /* Initially hidden */
+                  width: 100%;
+                  /* The line covers the full width */
+                  opacity: 0;
+                  /* Initially hidden */
                 }
-              
+
                 /* First line animation */
                 .name::after {
                   bottom: -5px;
                   animation: animateLine 2s infinite;
-                  animation-delay: 0s; /* First line starts immediately */
+                  animation-delay: 0s;
+                  /* First line starts immediately */
                 }
-              
+
                 /* Second line animation */
                 .name::before {
                   bottom: -10px;
                   background-color: white;
                   animation: animateLine 2s infinite;
-                  animation-delay: 0.5s; /* Delayed start for second line */
+                  animation-delay: 0.5s;
+                  /* Delayed start for second line */
                 }
-              
+
                 /* Third line animation */
                 .name span::after {
                   bottom: -15px;
                   background-color: green;
                   animation: animateLine 2s infinite;
-                  animation-delay: 1s; /* Further delay for third line */
+                  animation-delay: 1s;
+                  /* Further delay for third line */
                 }
-              
+
                 @keyframes animateLine {
                   0% {
                     width: 0;
-                    opacity: 1; /* Line appears */
+                    opacity: 1;
+                    /* Line appears */
                   }
+
                   50% {
-                    width: 100%; /* Line grows to full width */
+                    width: 100%;
+                    /* Line grows to full width */
                     opacity: 1;
                   }
+
                   100% {
                     width: 100%;
-                    opacity: 0; /* Line fades out */
+                    opacity: 0;
+                    /* Line fades out */
                   }
                 }
               </style>
-              
+
             </div>
             <div class="sponsor">
-              <p class="text">Event sponsored by</p>
-              <img class="logo" src="./assets/img/vizlogov1.png" alt="Sponsor Logo" />
+              <p class="text" style="margin: -10px;">Event sponsored by</p>
+              <img class="logo" src="./assets/img/nxt.png" alt="Sponsor Logo" style="height: 150px; width: 150px; margin-bottom: -15px;"/>
             </div>
             <div class="text">
-            <h4 class="anim-2">Embark on a visual journey with Dataviz</h4>
-            <h6 class="anim-3">Where Data becomes Art in the ultimate visualization experience!</h6></div>
+              <h4 class="anim-2">Embark on a visual journey with Dataviz</h4>
+              <h6 class="anim-3">Where Data becomes Art in the ultimate visualization experience!</h6>
+            </div>
           </div>
           <div class="col-12 justify-content-center title-desc">
             <a href="https://hackwith.codechefvit.com" target="_blank">
-              <button id="devfolio-apply-now">Register Now</button>
+              <button id="devfolio-apply-now" >Register Now</button>
             </a>
           </div>
         </div>
@@ -268,73 +308,84 @@
       <div class="section-wrapper fullwidth center-vh dir-col anim">
         <div class="section-title text-center">
           <h2 class="display-2 pb-1 display-title anim-2">
-              About<span style="color: rgb(0, 179, 255)"> Viz-A-Thon 3.O</span>
+            About<span style="color: rgb(0, 179, 255)"> Viz-A-Thon 3.O</span>
           </h2>
-            </div>
-            
-            <div class="section-content reduced anim text-center">
-                <div class="title-desc anim-3">
-                    <p class="hover-effect" style="
+        </div>
+
+        <div class="section-content reduced anim text-center">
+          <div class="title-desc anim-3">
+            <p class="hover-effect" style="
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
                     ">
-                    Vizathon, a three-hour offline hackathon, tasks participants with cleaning and analyzing provided datasets using tools like Tableau and Power BI. The challenge lies in crafting insightful visualizations from cleaned data. With a prize pool exceeding 50k rupees, participants clean, analyze, and present their findings in visually compelling dashboards to a panel of judges. Judging criteria encompass data preparation, analysis depth, visualization design, presentation, and tool proficiency. This event not only fosters skill development in data handling but also offers networking, recognition, and career advancement opportunities. Vizathon is the ultimate platform where data prowess meets creativity in a high-stakes, high-reward competition.
-                    </p>
-            
-                    <h3 class="display-3 pt-4 pb-1 hover-effect" style="
+              Vizathon, a three-hour offline hackathon, tasks participants with cleaning and analyzing provided datasets
+              using tools like Tableau and Power BI. The challenge lies in crafting insightful visualizations from
+              cleaned data. With a prize pool exceeding 50k rupees, participants clean, analyze, and present their
+              findings in visually compelling dashboards to a panel of judges. Judging criteria encompass data
+              preparation, analysis depth, visualization design, presentation, and tool proficiency. This event not only
+              fosters skill development in data handling but also offers networking, recognition, and career advancement
+              opportunities. Vizathon is the ultimate platform where data prowess meets creativity in a high-stakes,
+              high-reward competition.
+            </p>
+
+            <h3 class="display-3 pt-4 pb-1 hover-effect" style="
                         display: flex;
                         justify-content: center;
                         color: rgb(0, 179, 255);
                         transition: transform 0.3s, color 0.3s;
                     ">
-                        Where?
-                    </h3>
-                    <p class="hover-effect" style="
+              Where?
+            </h3>
+            <p class="hover-effect" style="
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
                     ">
-                        D Building VIIT, Pune 
-                    </p>
-            
-                    <h3 class="display-3 pt-4 pb-1 hover-effect" style="
+              D Building VIIT, Pune
+            </p>
+
+            <h3 class="display-3 pt-4 pb-1 hover-effect" style="
                         color: rgb(0, 179, 255);
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
                     ">
-                        When?
-                    </h3>
-                    <p class="hover-effect" style="
+              When?
+            </h3>
+            <p class="hover-effect" style="
                         display: flex;
                         justify-content: center;
                         transition: transform 0.3s, color 0.3s;
                     ">
-                        21th October to 25th October, 2024
-                    </p>
-                </div>
-            </div>
-            
-            <style>
+              21th October to 25th October, 2024
+            </p>
+          </div>
+        </div>
+
+        <style>
           /* Hover Effects */
           .hover-effect:hover {
-              transform: scale(1.05); /* Slightly enlarge the text */
-              color: rgb(0, 179, 255); /* Change color on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge the text */
+            color: rgb(0, 179, 255);
+            /* Change color on hover */
           }
-      
+
           @media (max-width: 768px) {
-              .hover-effect {
-                  font-size: 1rem; /* Adjust font size for smaller screens */
-              }
+            .hover-effect {
+              font-size: 1rem;
+              /* Adjust font size for smaller screens */
+            }
           }
-      
+
           @media (max-width: 480px) {
-              .hover-effect {
-                  font-size: 0.9rem; /* Further adjust font size for very small screens */
-              }
+            .hover-effect {
+              font-size: 0.9rem;
+              /* Further adjust font size for very small screens */
+            }
           }
-        </style>      
+        </style>
       </div>
     </div>
 
@@ -422,7 +473,7 @@
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
                 <div class="prizecard">
-                  <img src="./assets/img/best-idea.svg" class="prize-icon" />
+                  <img src="./assets/img/reg.png" class="prize-icon" />
                   <p class="title"><span class="date">28th Nov</span>
                     <span class="time">10:00 AM</span>
                   </p>
@@ -492,14 +543,14 @@
       </div>
     </div>
     <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
-      data-section="timeline" data-anchor="timeline" style="background:url(./assets/img/bg.png)"   >
+      data-section="timeline" data-anchor="timeline" >
       <div class="section-wrapper center-vh dir-col anim">
         <div class="anim-2">
-            <h2 class="display-1 display-title text-center">Rules</h2>
+          <h2 class="display-1 display-title text-center">Rules</h2>
         </div>
         <br />
         <div class="section-content reduced anim text-center">
-            <div class="outer" style="
+          <div class="outer" style="
                 width: auto;
                 height: auto;
                 border-radius: 10px;
@@ -507,37 +558,70 @@
                 background: radial-gradient(circle 230px at 0% 0%, rgba(0, 179, 255, 1), rgba(12, 13, 13, 1));
                 position: relative;
             ">
-                <style>
-                    @keyframes moveDot {
-                        0%, 100% { top: 10%; right: 10%; }
-                        25% { top: 10%; right: calc(100% - 35px); }
-                        50% { top: calc(100% - 30px); right: calc(100% - 35px); }
-                        75% { top: calc(100% - 30px); right: 10%; }
-                    }
-    
-                    /* Media Queries for Responsiveness */
-                    @media (max-width: 768px) {
-                        .outer { height: auto; }
-                        .card { width: 95%; }
-                    }
-    
-                    @media (max-width: 480px) {
-                        .outer { height: auto; }
-                        .card { width: 100%; }
-                        .text { font-size: 1rem; }
-                    }
-    
-                    /* Hover Effects */
-                    .card {
-                        transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    }
-                    .card:hover {
-                        transform: scale(1.05); /* Slightly enlarge the card */
-                        box-shadow: 0 4px 20px rgba(0, 179, 255, 0.5); /* Add shadow effect */
-                    }
-                </style>
-    
-                <div class="card" style="
+            <style>
+              @keyframes moveDot {
+
+                0%,
+                100% {
+                  top: 10%;
+                  right: 10%;
+                }
+
+                25% {
+                  top: 10%;
+                  right: calc(100% - 35px);
+                }
+
+                50% {
+                  top: calc(100% - 30px);
+                  right: calc(100% - 35px);
+                }
+
+                75% {
+                  top: calc(100% - 30px);
+                  right: 10%;
+                }
+              }
+
+              /* Media Queries for Responsiveness */
+              @media (max-width: 768px) {
+                .outer {
+                  height: auto;
+                }
+
+                .card {
+                  width: 95%;
+                }
+              }
+
+              @media (max-width: 480px) {
+                .outer {
+                  height: auto;
+                }
+
+                .card {
+                  width: 100%;
+                }
+
+                .text {
+                  font-size: 1rem;
+                }
+              }
+
+              /* Hover Effects */
+              .card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              }
+
+              .card:hover {
+                transform: scale(1.05);
+                /* Slightly enlarge the card */
+                box-shadow: 0 4px 20px rgba(0, 179, 255, 0.5);
+                /* Add shadow effect */
+              }
+            </style>
+
+            <div class="card" style="
                     z-index: 1;
                     width: 90%;
                     height: auto;
@@ -552,36 +636,43 @@
                     color: #fff;
                     font-family: 'Arial', sans-serif;
                 ">
-                    <div class="text" style="
+              <div class="text" style="
                         font-weight: bold;
                         font-size: 1.5rem; /* Increased font size */
                         color: white; /* Set text color to white */
                         text-align: left; /* Align text to the left */
                         padding: 20px; /* Add padding for better spacing */
                     ">
-                        <h3 style="color: white;">Viz-A-Thon 3.O Rules:</h3>
-                        <ul style="
+                <h3 style="color: white;">Viz-A-Thon 3.O Rules:</h3>
+                <ul style="
                             list-style-type: disc; /* Use bullet points */
                             padding-left: 20px; /* Indent the list */
                             margin: 0; /* Remove default margin */
                         ">
-                            <li>There will be 2 rounds of the competition: an offline coding round followed by a presentation round.</li>
-                            <li>Teams shortlisted from the first round must present their solutions to a panel of judges.</li>
-                            <li>Only Undergraduate students are eligible to participate.</li>
-                            <li>Team size should be 3-4 members strictly.</li>
-                            <li>It is mandatory for the team leader to have a Twitter/LinkedIn account.</li>
-                        </ul>
-                    </div>
-    
-                    <div class="topl" style="top: 10%; background: linear-gradient(90deg, rgba(0, 179, 255, 0.5) 30%, #1d1f1f 70%);"></div>
-                    <div class="bottoml" style="bottom: 10%; background: linear-gradient(90deg, rgba(0, 179, 255, 0.5) 30%, #1d1f1f 70%);"></div>
-                    <div class="leftl" style="left: 10%; width: 1px; height: 100%; background: linear-gradient(180deg, rgba(0, 179, 255, 0.5) 30%, #222424 70%);"></div>
-                    <div class="rightl" style="right: 10%; width: 1px; height: 100%; background: linear-gradient(180deg, rgba(0, 179, 255, 0.5) 30%, #222424 70%);"></div>
-                </div>
+                  <li>There will be 2 rounds of the competition: an offline coding round followed by a presentation
+                    round.</li>
+                  <li>Teams shortlisted from the first round must present their solutions to a panel of judges.</li>
+                  <li>Only Undergraduate students are eligible to participate.</li>
+                  <li>Team size should be 3-4 members strictly.</li>
+                  <li>It is mandatory for the team leader to have a Twitter/LinkedIn account.</li>
+                </ul>
+              </div>
+
+              <div class="topl"
+                style="top: 10%; background: linear-gradient(90deg, rgba(0, 179, 255, 0.5) 30%, #1d1f1f 70%);"></div>
+              <div class="bottoml"
+                style="bottom: 10%; background: linear-gradient(90deg, rgba(0, 179, 255, 0.5) 30%, #1d1f1f 70%);"></div>
+              <div class="leftl"
+                style="left: 10%; width: 1px; height: 100%; background: linear-gradient(180deg, rgba(0, 179, 255, 0.5) 30%, #222424 70%);">
+              </div>
+              <div class="rightl"
+                style="right: 10%; width: 1px; height: 100%; background: linear-gradient(180deg, rgba(0, 179, 255, 0.5) 30%, #222424 70%);">
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    
+      </div>
+
     </div>
     <div class="section section-description fp-auto-height-responsive sec4 fp-section anim fp-completely"
       data-section="sponsors" data-anchor="sponsors">
@@ -597,7 +688,8 @@
               <div class="section-content anim">
                 <div class="images text-center hoverimg">
                   <a href="https://www.nextgenedu.in/" target="_blank"><img class="img-fluid"
-                      src="https://www.nextgenedu.in/wp-content/uploads/2023/06/ISO-90012015-Certified-150x150.png" alt="Juspay" /></a>
+                      src="https://www.nextgenedu.in/wp-content/uploads/2023/06/ISO-90012015-Certified-150x150.png"
+                      alt="Juspay" /></a>
                 </div>
               </div>
             </div>
@@ -605,28 +697,13 @@
               <div class="section-content anim">
                 <div class="images text-center hoverimg">
                   <a href="https://www.idp.com/india/" target="_blank"><img class="img-fluid"
-                      src="https://images.ctfassets.net/8bbwomjfix8m/7H1HVSTtPlUBjb1gLa4X7f/f3f142a9c1c81850df2d2d975eb1fe3e/idp-logo.svg" alt="Rarible" /></a>
+                      src="https://images.ctfassets.net/8bbwomjfix8m/7H1HVSTtPlUBjb1gLa4X7f/f3f142a9c1c81850df2d2d975eb1fe3e/idp-logo.svg"
+                      alt="Rarible" /></a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 center-vh">
-              <div class="section-content anim">
-                <div class="images text-center hoverimg">
-                  <img class="img-fluid" src="https://devsoc-web.s3.ap-south-1.amazonaws.com/Muraai.png"
-                    alt="Muraai Information Technology" />
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 center-vh">
-              <div class="section-content anim">
-                <div class="images text-center hoverimg">
-                  <a href="https://awesomepolygon.com/" target="_blank"><img class="img-fluid"
-                      src="https://devsoc-web.s3.ap-south-1.amazonaws.com/polygon.png"
-                      alt="Polygon Matic Network" /></a>
-                </div>
-              </div>
-            </div>
-          
+            
+
           </div>
           <a href="/assets/Brochure.pdf" download>
             <button id="devfolio-apply-now" class="mt-3">
@@ -659,7 +736,8 @@
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faq-accordian">
                     <div class="card-body">
                       <p>
-                      Vizathon: A 3-hour data marvel! Clean, analyze, and create stunning visuals from provided datasets using Tableau and Power BI. Win big from a 50k+ prize pool! Unleash your data genius.
+                        Vizathon: A 3-hour data marvel! Clean, analyze, and create stunning visuals from provided
+                        datasets using Tableau and Power BI. Win big from a 50k+ prize pool! Unleash your data genius.
                       </p>
                     </div>
                   </div>
@@ -675,7 +753,8 @@
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq-accordian">
                     <div class="card-body">
                       <p>
-                        Vizathon is open to any passionate undergraduate student, and enthusiast, irrespective of experience levels.
+                        Vizathon is open to any passionate undergraduate student, and enthusiast, irrespective of
+                        experience levels.
                       </p>
                     </div>
                   </div>
@@ -692,7 +771,8 @@
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq-accordian">
                     <div class="card-body">
                       <p>
-                      No worries! We're thrilled to have you at Vizathon. Dive into the data excitement. Our event is best to start your journey. Contact us for more guidance and details.
+                        No worries! We're thrilled to have you at Vizathon. Dive into the data excitement. Our event is
+                        best to start your journey. Contact us for more guidance and details.
                       </p>
                     </div>
                   </div>
@@ -709,7 +789,8 @@
                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faq-accordian">
                     <div class="card-body">
                       <p>
-                        Its a team event. You can form a team with 3-4 members in it at maximum. Individual participation isn't allowed.
+                        Its a team event. You can form a team with 3-4 members in it at maximum. Individual
+                        participation isn't allowed.
                       </p>
                     </div>
                   </div>
@@ -725,7 +806,8 @@
                   <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faq-accordian">
                     <div class="card-body">
                       <p>
-                      The event will provide diverse datasets across different domains. No specific theme will be assigned—participants can expect a variety of datasets.
+                        The event will provide diverse datasets across different domains. No specific theme will be
+                        assigned—participants can expect a variety of datasets.
                       </p>
                     </div>
                   </div>
@@ -742,7 +824,8 @@
                   <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faq-accordian">
                     <div class="card-body">
                       <p>
-                        Winners will be chosen based on criteria such as data cleaning proficiency, depth of analysis, visualization creativity, presentation skills, and tool utilization.
+                        Winners will be chosen based on criteria such as data cleaning proficiency, depth of analysis,
+                        visualization creativity, presentation skills, and tool utilization.
                       </p>
                     </div>
                   </div>
@@ -783,18 +866,20 @@
             <div class="row justify-content-center">
               <div class="col-12 row">
                 <button type="button" class="btn btn-social">
-                  <a href="https://youtube.com/@aisa_viit?si=Ck7fiKejq1Cib7lQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="https://youtube.com/@aisa_viit?si=Ck7fiKejq1Cib7lQ" target="_blank"><i
+                      class="fab fa-youtube"></i></a>
                 </button>
                 <button type="button" class="btn btn-social">
                   <a href="https://www.linkedin.com/company/aisaviit/" target="_blank"><i
                       class="fab fa-linkedin"></i></a>
                 </button>
                 <button type="button" class="btn btn-social">
-                  <a href="https://www.instagram.com/aisa_viit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i
-                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/aisa_viit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"><i class="fab fa-instagram"></i></a>
                 </button>
                 <button type="button" class="btn btn-social">
-                  <a href="https://x.com/i/flow/login?redirect_after_login=%2Faisa_viit" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://x.com/i/flow/login?redirect_after_login=%2Faisa_viit" target="_blank"><i
+                      class="fab fa-twitter"></i></a>
                 </button>
               </div>
               <div class="col-12 col-md-5 m-2 text-center">
@@ -829,8 +914,8 @@
   <footer id="site-footer" class="page-footer">
     <div class="footer-left">
       <p>
-        With <span style="color: #f00; font-weight: 700">♥</span> by
-        <a href="http://www.codechefvit.com" target="_blank">
+         <span style="color: #f00; font-weight: 700"></span>
+        <a href="https://www.aisa-viit.com/" target="_blank">
           <span class="marked">AiSA-VIIT</span>
         </a>
       </p>
@@ -848,7 +933,8 @@
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/aisa_viit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+          <a href="https://www.instagram.com/aisa_viit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank">
             <i class="icon fab fa-instagram"></i>
           </a>
         </li>
