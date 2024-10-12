@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-  font-family: "Open Sans", "Proxima Nova ", "Segoe UI", Opensans, Roboto,
-    Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", "Open Sans", "Proxima Nova", "Segoe UI", Roboto, Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+
   font-size: 1rem;
   color: #fff;
   background-color: #121212;
@@ -35,8 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Proxima Nova ", "Segoe UI", Opensans, Roboto,
-    Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", "Open Sans", "Proxima Nova", "Segoe UI", Roboto, Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
 }
 
 h3,
@@ -966,30 +965,31 @@ p {
 .fp-viewing-prizes .page-bg-cover,
 .fp-viewing-rarible .page-bg-cover,
 .fp-viewing-speakers .page-bg-cover,
+.fp-viewing-timeline .page-bg-cover,
 .fp-viewing-specials .page-bg-cover,
 .fp-viewing-tracks .page-bg-cover {
-  background-image: url(../img/bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-sponsors .page-bg-cover {
-  background-image: url(../img/sponsors-bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-faqs .page-bg-cover {
-  background-image: url(../img/faqs-bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-contact .page-bg-cover {
-  background-image: url(../img/contact-bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-ds .page-bg-cover {
-  background-image: url(../img/register-bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 @media screen and (max-width: 600px) {
   .page-bg-cover {
-    background-image: url(../img/bg.png), url(../img/bg-grid.png) !important;
+    background-image: url(../img/cryp.png), url(../img/bg-grid.png) !important;
   }
 }
 
@@ -3522,14 +3522,24 @@ a:hover {
   }
 }
 
-.fa-facebook:hover,
-.fa-instagram:hover,
-.fa-linkedin:hover,
-.fa-twitter:hover {
-  color: #037fd5;
+.fa-youtube:hover {
+  color: #FF4E42; /* YouTube red (slightly faint for a softer look) */
 }
 
-.icon.fa-facebook:hover,
+.fa-instagram:hover {
+  color:#e42c6c; /* Correct Instagram pinkish color */
+}
+
+.fa-linkedin:hover {
+  color: #0072b1; /* Refined LinkedIn blue */
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2; /* Twitter blue remains the same */
+}
+
+
+.icon.fa-youtube:hover,
 .icon.fa-instagram:hover,
 .icon.fa-linkedin:hover,
 .icon.fa-twitter:hover {
