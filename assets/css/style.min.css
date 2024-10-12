@@ -3144,7 +3144,7 @@ h4 {
   height: 100%;
   overflow: visible;
   background: #0e0c0d url(../img/vizlogov1.png) no-repeat center center;
-  background-size: 100px 100px;
+  background-size: 300px 100px;
   text-align: center;
   padding-top: calc(50vh + 60px);
 }
