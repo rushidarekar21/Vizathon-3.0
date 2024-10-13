@@ -988,9 +988,32 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .page-bg-cover {
-    background-image: url(../img/cryp.png), url(../img/bg-grid.png) !important;
-  }
+  .fp-viewing-about .page-bg-cover,
+.fp-viewing-home .page-bg-cover,
+.fp-viewing-prizes .page-bg-cover,
+.fp-viewing-rarible .page-bg-cover,
+.fp-viewing-speakers .page-bg-cover,
+.fp-viewing-timeline .page-bg-cover,
+.fp-viewing-specials .page-bg-cover,
+.fp-viewing-tracks .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-sponsors .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-faqs .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-contact .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-ds .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
 }
 
 .fp-viewing-home .top-splash {
