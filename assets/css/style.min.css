@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-  font-family: "Open Sans", "Proxima Nova ", "Segoe UI", Opensans, Roboto,
-    Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", "Open Sans", "Proxima Nova", "Segoe UI", Roboto, Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+
   font-size: 1rem;
   color: #fff;
   background-color: #121212;
@@ -35,8 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Proxima Nova ", "Segoe UI", Opensans, Roboto,
-    Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", "Open Sans", "Proxima Nova", "Segoe UI", Roboto, Helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
 }
 
 h3,
@@ -969,29 +968,52 @@ p {
 .fp-viewing-timeline .page-bg-cover,
 .fp-viewing-specials .page-bg-cover,
 .fp-viewing-tracks .page-bg-cover {
-  background-image: url(../img/bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-sponsors .page-bg-cover {
-  background-image: url(../img/bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-faqs .page-bg-cover {
-  background-image: url(../img/bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-contact .page-bg-cover {
-  background-image: url(../img/bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 .fp-viewing-ds .page-bg-cover {
-  background-image: url(../img/bg.png), url(../img/bg-grid.png);
+  background-image: url(../img/cryp.png), url(../img/bg-grid.png);
 }
 
 @media screen and (max-width: 600px) {
-  .page-bg-cover {
-    background-image: url(../img/bg.png), url(../img/bg-grid.png) !important;
-  }
+  .fp-viewing-about .page-bg-cover,
+.fp-viewing-home .page-bg-cover,
+.fp-viewing-prizes .page-bg-cover,
+.fp-viewing-rarible .page-bg-cover,
+.fp-viewing-speakers .page-bg-cover,
+.fp-viewing-timeline .page-bg-cover,
+.fp-viewing-specials .page-bg-cover,
+.fp-viewing-tracks .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-sponsors .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-faqs .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-contact .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
+
+.fp-viewing-ds .page-bg-cover {
+  background-image: url(../img/cryp2.png), url(../img/bg-grid.png);
+}
 }
 
 .fp-viewing-home .top-splash {
@@ -1527,7 +1549,7 @@ p {
 .section-content .title-desc .logo{
   width: 100px;
   height: auto;
-  filter: drop-shadow(0 0 10px #00b3ff);
+  filter: drop-shadow(0 0 10px #1aa1d7);
 }
 
 .section-content .title-desc .event{
@@ -1561,24 +1583,24 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .section-content .title-desc .sponsor .text{
   color: #00b3ff;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .section-content .title-desc .sponsor .logo{
   width: 100px;
   height: auto;
-  filter: drop-shadow(0 0 10px #00b3ff);
+  filter: drop-shadow(0 0 10px #1aa1d7);
 }
 
 .section-content .title-desc .text{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .section-content .title-desc h4, 
@@ -3145,7 +3167,7 @@ h4 {
   height: 100%;
   overflow: visible;
   background: #0e0c0d url(../img/vizlogov1.png) no-repeat center center;
-  background-size: 100px 100px;
+  background-size: 300px 100px;
   text-align: center;
   padding-top: calc(50vh + 60px);
 }
@@ -3233,7 +3255,7 @@ h4 {
 }
 
 #devfolio-apply-now:hover {
-  background-color: #2954bf !important;
+  background-color: #4963a7 !important;
 }
 
 #devfolio-apply-now.large {
@@ -3253,7 +3275,7 @@ h4 {
 }
 
 #devfolio-apply-now:hover {
-  box-shadow: 0 0 20px #00b3ff;
+  box-shadow: 0 0 20px #30728e;
 }
 
 .devfolio-large {
@@ -3314,7 +3336,7 @@ h4 {
 @media screen and (max-width: 576px) {
   .hoverimg img {
     width: 70vw;
-    height: 13vw;
+    height: 27vw;
     max-width: 80vw;
     padding: 8px;
     margin: 8px;
@@ -3582,8 +3604,8 @@ a:hover {
 
 .prizecard-1 {
   width: 100%;
-  max-width: 600px;
-  height: 320px;
+  max-width: 400px;
+  height: 300px;
   background-color: #292929;
   margin: 10px;
   border-radius: 10px;
@@ -3603,7 +3625,7 @@ a:hover {
 
 .prizecard .title {
   width: 100%;
-  margin: 5px;
+  margin: 2px;
   text-align: center;
   color: #fff;
   font-weight: 600;
@@ -3639,7 +3661,7 @@ a:hover {
 
 .prizecard .text {
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-size: 13px;
   text-align: center;
   margin-top: 7.5px;
@@ -3692,8 +3714,8 @@ a:hover {
 }
 
 .prize-icon {
-  width: 100px;
-  height: 160px;
+  width: 160px;
+  height: 170px;
 }
 
 .discord {
@@ -3786,3 +3808,4 @@ a:hover {
     height: 300px;
   }
 }
+
